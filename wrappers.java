@@ -3,12 +3,15 @@ public class wrappers {
 
 
         int anos = 26;
-        System.out.println("olá,meu nome é gabriel e tenho " + anos + " anos");
+        System.out.println("olá, meu nome é gabriel e tenho " + anos + " anos");
 
-        double anos1 = anos;
-        anos1= 27;
+        Integer anosWrapper = anos; // autoboxing
+        anosWrapper = 27;
 
-        System.out.println("agora irei fazer " + anos1 + " anos em novembro");
+        int anosDeNovo = anosWrapper; // unboxing
+
+        System.out.println("agora irei fazer " + anosDeNovo + " anos em novembro");
+
     }
 }
 //
